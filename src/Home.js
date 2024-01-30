@@ -10,7 +10,7 @@ function Home() {
             <h1 className="Home-heading">In anticipation of Christmas...</h1>
           </div>
         </div>
-         <h2 className="Home-about-header">Waiting for you</h2> 
+         <h2 className="Home-waiting-header">Waiting for you</h2> 
          <HomeWaiting />
         <Video />
       </div>
