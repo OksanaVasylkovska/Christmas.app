@@ -1,38 +1,429 @@
-.App {
-  text-align: center;
+body {
+  background: #EAEAED;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+
+.Top-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 25px;
+  color: #747484;
+}
+
+.Link:hover {
+  color: #2B4E53;
+  font-weight: 600;
+}
+.Logo-container {
+  display:flex;
+  align-items: center;
+  width: 30%;
+}
+
+.Logo-icon {
+  width: 200px;
+  height: 105px;
+  margin-right: 10px;
+}
+
+/* Home.js */
+
+.Home-container{
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.Home-inner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+} 
+
+.Home-cover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('/src/assets/cover/cover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Home-coverText-container {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: 'Lato', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Home-heading {
+  font-weight: 300;
+  font-size: 56px;
+  color:#b74440;
+  word-spacing: 8px;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 580px;
+  margin-top: 130px;
+}
+
+.Home-about-header {
+  font-size: 48px;
+  text-align: center;
+  color: #2B4E53;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin-top: 100px;
+  width: 450px;
+  line-height: 62px;
+}
+
+.HomeWaiting-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.HomeWaiting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin: 0px 32px;
+  height: 220px;
+}
+
+.HomeWaiting-icon-container {
+  box-sizing: border-box;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.HomeWaiting-icon {
+ width: 80px;
+ height: 80px;
+}
+
+.HomeWaiting-par {
+  box-sizing: border-box; 
+  width: 260px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2B4E53;
+}
+/* Video.js */
+
+video {
+  object-fit: contain;
+  width: 900px;
+  height: auto;
+  margin-top: 32px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*Footer.js */
+
+.Footer {
+  background-image: url('./assets/footer/footer1.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  height: 30vh;
+  width: 100%; 
+  margin-top: 100px;
+
+}
+
+.Footer-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer-container {
+  margin-top: 100px;
+}
+
+.Footer-par {
+  font-size: 20px;
+  color: #2B4E53;
+}
+/* ChristmasMovies */
+
+.ChristmasMovies-container {
+  width: 100%;
+  margin-top: 60px;
+} 
+
+
+.ChristmasMovies-main {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+
+.ChristmasMovies-main-cont {
+  display: none;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  1% {
+    display: block;
+    opacity: 0;
   }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.active-anim {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: #747484;
+  border-radius: 16px;
+  overflow: hidden; 
+  width: 100%;
+  animation: fadeInFromNone 0.4s ease-in-out;
+}
+
+.ChristmasMovies-left-cont {
+  width: 40%;
+  height: 500px;
+}
+
+.ChristmasMovies-poster {
+  width: 100%;
+  height: 100%;
+}
+
+.ChristmasMovies-right-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width:315px;
+  padding-left: 40px;
+}
+
+
+.ChristmasMovies-header {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #2B4E53;
+  align-self: center;
+  text-align: center;
+}
+
+.ChristmasMovies-par {
+  font-size: 18px;
+  font-weight: 300;
+  width: 250px;
+  line-height: 30px;
+}
+
+
+.ChristmasMovies-arrow-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ChristmasMovies-arrowBtn {
+  padding: 17px 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+.ChristmasMovies-dot-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ChristmasMovies-dotActive {
+  width: 16px;
+}
+
+.ChristmasMovies-dot {
+  filter:invert(50%);
+  width: 16px;
+}
+
+/* AdventCalendar */
+
+.AdventCalendar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 160px; 
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calendar-day {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  max-width: 200px; 
+  max-height: 250px;  
+  box-sizing: border-box; 
+}
+
+.calendar-task {
+  flex-grow: 1;
+  flex-basis: 16%; 
+  font-size: 15px;
+  color: #2B4E53;
+  font-family: 'Lato', sans-serif;
+  width: 220px;
+  height: 200px; 
+  max-width: 200px; 
+  max-height: 250px; 
+  box-sizing: border-box; 
+  margin: 0; 
+  
+}
+
+.CalendarBtn {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  background-color: #2B4E53;
+  color: #d6a85d;
+  width: 200px;
+  height: 30px;
+} 
+
+@media all and (max-width: 800px) {
+
+  .Home-heading {
+  margin-top: 50px;
+}
+
+
+  .AdventCalendar-container {
+  margin-top: 40px;
+  margin-left: 65px; 
+  width: 800px;
+}
+
+video {
+  width: 700px;
+
+}
+}
+
+@media all and (max-width: 400px) {
+
+  .Link {
+  font-size: 15px;
+}
+
+.Logo-container {
+  width: 20%;
+}
+
+.Logo-icon {
+  width: 150px;
+  height: 105px;
+  margin-right: 10px;
+}
+
+.Home-heading {
+  font-size: 35px;
+  width: 350px;
+  margin-top: 65px;
+}
+
+.Home-about-header {
+  font-size: 40px;
+  width: 350px;
+}
+
+video {
+  width: 350px;
+
+}
+
+.AdventCalendar-container {
+  margin-top: 40px;
+  margin-left: 100px; 
+  width: 200px;
+}
+
+
+.ChristmasMovies-par {
+  font-size: 18px;
+  font-weight: 300;
+  width: 300px;
+  line-height: 30px;
+}
+
+.ChristmasMovies-left-cont {
+  width: 300px;
+  height: 500px;
+}
+
 }

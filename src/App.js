@@ -1,24 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Home from './Home';
+import AdventCalendar from './AdventCalendar';
+import logo from './assets/logo/logo.png';
+import ChristmasMovie from './ChristmasMovie';
+import Footer from './Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="Top-container">
+        <nav className="Navbar">
+          <Link to="/" className="Link">
+            <div className="Logo-container">
+              <img className="Logo-icon" src={logo} alt="logo" />
+            </div>
+          </Link>
+          <Link to="/calendar" className="Link">
+            Advent calendar
+          </Link>
+          <Link to="/movies" className="Link">
+            Christmas movies
+          </Link>
+        </nav>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calendar" element={<AdventCalendar />} />
+        <Route path="/movies" element={<ChristmasMovie /> }/>
+      </Routes>
+
+      <footer>
+       <Footer />
+    </footer>
+    
+    </Router>
+
+  
   );
 }
 
