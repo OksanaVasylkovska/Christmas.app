@@ -516,6 +516,50 @@ video {
 }
 }
 
+@media all and (max-width: 412px) {
+
+  .Link {
+  font-size: 13px;
+}
+
+.Logo-container {
+  width: 10%;
+}
+
+.Logo-icon {
+  width: 100px;
+  height: 80px;
+  margin-right: 8px;
+}
+
+.Home-heading {
+  font-size: 30px;
+  width: 350px;
+  margin-top: 30px;
+}
+
+.Home-waiting-header{
+  font-size: 40px;
+  width: 350px;
+}
+
+video {
+  width: 380px;
+
+}
+
+.AdventCalendar-container {
+  margin-top: 40px;
+  margin-left: 100px; 
+  width: 200px;
+}
+
+
+.active-anim {
+  width: 380px;
+}
+
+}
 
 @media all and (max-width: 400px) {
 
@@ -658,4 +702,5 @@ video {
   font-size: 12px;
   
 }
+
 }
