@@ -427,3 +427,56 @@ video {
 }
 
 }
+
+@media all and (max-width: 350px) {
+
+  .Link {
+  font-size: 10px;
+}
+
+.Logo-container {
+  width: 10%;
+}
+
+.Logo-icon {
+  width: 130px;
+  height: 85px;
+  margin-right: 8px;
+}
+
+.Home-heading {
+  font-size: 30px;
+  width: 350px;
+  margin-top: 65px;
+}
+
+.Home-about-header {
+  font-size: 35px;
+  width: 350px;
+}
+
+video {
+  width: 300px;
+
+}
+
+.AdventCalendar-container {
+  margin-top: 40px;
+  margin-left: 80px; 
+  width: 200px;
+}
+
+
+.ChristmasMovies-par {
+  font-size: 18px;
+  font-weight: 300;
+  width: 300px;
+  line-height: 30px;
+}
+
+.ChristmasMovies-left-cont {
+  width: 300px;
+  height: 500px;
+}
+
+}
