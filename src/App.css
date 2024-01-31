@@ -394,7 +394,7 @@ video {
 
 
  .AdventCalendar-container {
-  margin-left: 100px ;
+  margin-left: 40px ;
   width: 620px;
 }
 
@@ -446,7 +446,7 @@ video {
 @media all and (max-width: 600px) {
 
 .Link {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .Logo-container {
@@ -456,18 +456,19 @@ video {
 .Logo-icon {
   width: 120px;
   height: 100px;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
   .Home-heading {
   font-size: 45px;
-  width:420px;
+  width: 600px;
+  margin-top: 70px;
 }
 
 
  .AdventCalendar-container {
-  margin-left: 95px ;
-  width: 500px;
+  margin-left: 60px ;
+  width: 450px;
 }
 
 video {
@@ -475,7 +476,7 @@ video {
 }
 
 .active-anim {
-  width: 550px;
+  width: 500px;
 }
 
 .ChristmasMovies-par {
@@ -608,7 +609,7 @@ video {
 
 
 .active-anim {
-  width: 380px;
+  width: 300px;
 }
 
 }

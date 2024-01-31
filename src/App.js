@@ -22,11 +22,11 @@ function App() {
 
   useLayoutEffect(() => {
     gsap.to(".Logo-container", { rotation: 360, duration: 3 });
-    gsap.to(".Home-coverText-container", { y: 20, opacity: 1, ease: "bounce", duration: 3, delay: 1 });
+    gsap.to(".Home-coverText-container", { y: 20, opacity: 1, ease: "bounce", duration: 3, delay: 3 });
     gsap.to(".HomeWaiting-icon-container", {
       rotation: 360,
       duration: 3,
-      delay: 2,
+      delay: 4,
     });
     gsap.to(".calendar-day", {
        opacity: 1,
