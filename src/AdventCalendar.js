@@ -1,7 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { dataCalendar } from "./dataCalendar";
+import gsap from "gsap";
 
 function AdventCalendar() {
+
+useLayoutEffect(() => {
+    gsap.to(".calendar-day", {
+    opacity: 1,
+    ease: "power2.inOut",
+    duration: 4,
+    });
+  
+}, []);
+
+
+
   const [days, setDays] = useState(dataCalendar);
 
   useEffect(() => {

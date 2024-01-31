@@ -3,7 +3,10 @@ import { dataMovies } from "./dataMovies";
 import leftArrow from './assets/icon/leftArrow.png';
 import rightArrow from './assets/icon/rightArrow.png';
 
+
 function ChristmasMovie() { 
+  
+
     const [slide, setSlide] = useState(0);
 
     const prevSlide = () => {

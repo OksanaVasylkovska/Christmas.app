@@ -28,7 +28,7 @@ body {
 .Link {
   text-decoration: none;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
   color: #747484;
 }
 
@@ -87,6 +87,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   font-family: 'Lato', sans-serif;
+  opacity: 0;
 }
 
 .Home-heading {
@@ -314,7 +315,8 @@ video {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  margin-left: 160px; 
+  margin-left: 200px; 
+  max-width: 1060px;
 }
 
 .calendar {
@@ -330,6 +332,7 @@ video {
   max-width: 200px; 
   max-height: 250px;  
   box-sizing: border-box; 
+  opacity: 0;
 }
 
 .calendar-task {
@@ -366,8 +369,8 @@ video {
 
 .Home-heading {
   margin-top: 80px;
-  font-size: 50px;
-  width: 500px;
+  font-size: 70px;
+  width: 650px;
 }
 
 video {
@@ -385,8 +388,8 @@ video {
 
   .Home-heading {
   margin-top: 50px;
-  font-size: 40px;
-  width: 450px;
+  font-size: 60px;
+  width: 600px;
 }
 
 
@@ -407,10 +410,14 @@ video {
   font-size: 20px;
 }
 
-  .Home-heading {
-  margin-top: 50px;
+.Link {
   font-size: 35px;
-  width: 400px;
+}
+
+ .Home-heading {
+  margin-top: 80px;
+  font-size: 70px;
+  width: 650px;
 }
 
 
@@ -438,8 +445,8 @@ video {
 
 @media all and (max-width: 600px) {
 
-   .Link {
-  font-size: 16px;
+.Link {
+  font-size: 25px;
 }
 
 .Logo-container {
@@ -449,12 +456,12 @@ video {
 .Logo-icon {
   width: 120px;
   height: 100px;
-  margin-right: 8px;
+  margin-right: 40px;
 }
 
   .Home-heading {
-  font-size: 30px;
-  width: 320px;
+  font-size: 45px;
+  width:420px;
 }
 
 
@@ -472,7 +479,7 @@ video {
 }
 
 .ChristmasMovies-par {
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 300;
   width: 250px;
 
@@ -482,6 +489,7 @@ video {
   width: 280px;
   height: 500px;
 }
+
 
 
 }
@@ -519,7 +527,7 @@ video {
 @media all and (max-width: 412px) {
 
   .Link {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .Logo-container {
@@ -529,7 +537,7 @@ video {
 .Logo-icon {
   width: 100px;
   height: 80px;
-  margin-right: 8px;
+  margin-right: 15px;
 }
 
 .Home-heading {
@@ -556,16 +564,16 @@ video {
 
 
 .active-anim {
-  width: 380px;
+  width: 340px;
 }
 
+.ChristmasMovies-right-cont {
+  max-width: 200px;
+  padding-left: 0px;
+}
 }
 
 @media all and (max-width: 400px) {
-
-  .Link {
-  font-size: 13px;
-}
 
 .Logo-container {
   width: 10%;
@@ -574,7 +582,6 @@ video {
 .Logo-icon {
   width: 100px;
   height: 80px;
-  margin-right: 8px;
 }
 
 .Home-heading {
@@ -608,18 +615,10 @@ video {
 
 @media all and (max-width: 350px) {
 
-  .Link {
-  font-size: 12px;
-}
-
-.Logo-container {
-  width: 3%;
-}
-
 .Logo-icon {
   width: 90px;
   height: 70px;
-  margin-right: 3px;
+  margin-right: 8px;
 }
 
 
@@ -647,23 +646,17 @@ video {
 }
 
 .active-anim {
-  width: 340px;
+  width: 280px;
 }
 }
 @media all and (max-width: 300px) {
-
-  .Link {
-  font-size: 10px;
+ .Link {
+  font-size: 18px;
 }
-
-.Logo-container {
-  width: 1%;
-}
-
 .Logo-icon {
   width: 70px;
   height: 50px;
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 
@@ -691,7 +684,7 @@ video {
 }
 
 .active-anim {
-  width: 280px;
+  width: 250px;
 }
 
 .ChristmasMovies-header {
@@ -699,8 +692,19 @@ video {
 }
 
 .ChristmasMovies-par {
-  font-size: 12px;
-  
+  font-size: 10px;
+  width: 200px;
+}
+
+
+.ChristmasMovies-left-cont {
+  width: 200px;
+  height: 400px;
+}
+
+.ChristmasMovies-right-cont {
+  max-width: 200px;
+  padding-left: 0px;
 }
 
 }
